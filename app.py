@@ -11,7 +11,7 @@ st.title("📊 伊赫莱 (Itovebi) & 大妥 (Phesgo) 销售进度看板")
 @st.cache_data
 def load_data():
     # 自动尝试可能的文件名（无论是原来的长名字还是改过的短名字）
-    possible_names = ["26H1沪闽赣-0427.xlsx", "data.xlsx"]
+    possible_names = ["26H1数据.xlsx", "data.xlsx"]
     for name in possible_names:
         if os.path.exists(name):
             df = pd.read_excel(name)
